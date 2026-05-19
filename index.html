@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Discord Chinese | 世界盛大，欢迎回家 - Learn Chinese & HSK Community</title>
     <meta name="description" content="Join the best Discord Chinese server. We provide HSK information, native language exchange, and a bridge to Chinese culture. 学习中文, HSK 资讯, 母语交流, 中国文化.">
-    
+
     <meta name="keywords" content="Discord Chinese, Learn Chinese, HSK Information, Chinese Language Exchange, Mandarin Learning, 学习中文, 中文服务器, HSK 资讯, 语言交换, Mandarin Discord, HSK 1, HSK 2, HSK 3, HSK 4, HSK 5, HSK 6, HSK 7-9, Chinese Grammar, Chinese Vocabulary, Chinese Characters, Pinyin, Speak Chinese, Chinese Pronunciation, Chinese Culture, China Travel, Chinese Food, Beijing, Shanghai, Chinese Slang, Mandarin Practice, Chinese Tutor, Chinese Friends, Chat with Chinese, Chinese Gaming, Genshin Impact Chinese, Star Rail Chinese, Black Myth Wukong Chinese, Chinese Anime, Chinese Drama, Learn Mandarin Free, Chinese Study Group, HSK Exam Dates, HSK Prep, HSK PDF, Chinese Listening, Chinese Speaking, Chinese Writing, Business Chinese, Daily Chinese, Traditional Chinese, Simplified Chinese, Cantonese, Discord Server Invite, Chinese Community, Language Learning Bot, Chinese AI, ChatGPT Chinese, DeepSeek Chinese, Chinese Translation, Study in China, Chinese University, HSK Test Center, Mandarin Conversation, Chinese Idioms, 成语, 汉语水平考试, 中文口语, 零基础学中文, 中级中文, 高级中文, 留学生, 中国留学, 中文词汇, 汉语语法, 拼音, 汉字, 听力, 口语, 阅读, 写作, 模拟考试, 考研中文, 商务汉语, 生活汉语, 流行语, 网络热梗, 游戏术语, 语音频道, 语言学习社区, 跨文化交流, 友谊, 探索中国">
 
     <meta property="og:title" content="Discord Chinese | The Ultimate Bridge to Mandarin">
@@ -20,24 +20,30 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Discord Chinese",
-      "url": "https://discordchinese.qzz.io",
-      "logo": "https://discordchinese.qzz.io/images/discord-chinese.png",
-      "description": "The ultimate Discord community for learning Mandarin Chinese, preparing for HSK exams, and connecting with native speakers.",
-      "sameAs": [
-        "https://discord.gg/s4RtxQHdUV"
-      ]
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Discord Chinese",
+        "url": "https://discordchinese.qzz.io",
+        "logo": "https://discordchinese.qzz.io/images/discord-chinese.png",
+        "description": "The ultimate Discord community for learning Mandarin Chinese, preparing for HSK exams, and connecting with native speakers.",
+        "sameAs": [
+            "https://discord.gg/s4RtxQHdUV"
+        ]
     }
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+    </script>
+    <script src="https://unpkg.com/lucide@latest">
+    </script>
 
     <script>
         tailwind.config = {
@@ -46,202 +52,708 @@
                     colors: {
                         discord: '#5865F2',
                         discordHover: '#4752C4',
-                        discordDark: '#0E0F12',
+                        discordDark: '#0a0b0f',
                         cnRed: '#E53E3E',
-                    }
+                        cnRedBright: '#FF4D4D',
+                        surface: '#141519',
+                        surfaceHover: '#1a1c23',
+                        borderSubtle: 'rgba(255,255,255,0.06)',
+                        borderGlow: 'rgba(229,62,62,0.35)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans SC', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 8s ease-in-out infinite',
+                        'float-delayed': 'float 10s ease-in-out 2s infinite',
+                        'pulse-soft': 'pulseSoft 3s ease-in-out infinite',
+                        'spin-slow': 'spinSlow 20s linear infinite',
+                        'shimmer': 'shimmer 2.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '33%': { transform: 'translateY(-12px) rotate(1deg)' },
+                            '66%': { transform: 'translateY(6px) rotate(-1deg)' },
+                        },
+                        pulseSoft: {
+                            '0%, 100%': { opacity: '0.5' },
+                            '50%': { opacity: '0.8' },
+                        },
+                        spinSlow: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' },
+                        },
+                        shimmer: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.8' },
+                        },
+                    },
                 }
             }
         }
     </script>
 
     <style>
-        body { background-color: #0E0F12; color: #ffffff; font-family: 'Inter', 'Noto Sans SC', sans-serif; overflow-x: hidden; }
-        .ambient-orb { position: fixed; border-radius: 50%; filter: blur(100px); z-index: -1; opacity: 0.25; pointer-events: none; }
-        .orb-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, #E53E3E 0%, transparent 70%); }
-        .orb-2 { bottom: -10%; right: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, #3182CE 0%, transparent 70%); }
-        
-        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.4s ease; }
-        .glass-card:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(229, 62, 62, 0.4); transform: translateY(-5px); }
+        :root {
+            --mouse-x: 0.5;
+            --mouse-y: 0.5;
+            --scroll-progress: 0;
+        }
 
-        [data-lang] { display: none; }
-        html[lang="zh-CN"] [data-lang="zh"] { display: block; }
-        html[lang="zh-CN"] span[data-lang="zh"] { display: inline; }
-        html[lang="en"] [data-lang="en"] { display: block; }
-        html[lang="en"] span[data-lang="en"] { display: inline; }
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
 
-        .seo-hidden { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+        body {
+            background-color: #0a0b0f;
+            color: #f1f1f3;
+            font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+            overflow-x: hidden;
+            cursor: default;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* 点阵背景纹理 */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            pointer-events: none;
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.025) 0.5px, transparent 0.5px);
+            background-size: 28px 28px;
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 40%, transparent 100%);
+            -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 40%, transparent 100%);
+        }
+
+        /* 环境光球 */
+        .ambient-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: -1;
+            opacity: 0.28;
+            pointer-events: none;
+            will-change: transform;
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .orb-1 {
+            top: -15%;
+            left: -8%;
+            width: 55vw;
+            height: 55vw;
+            max-width: 700px;
+            max-height: 700px;
+            background: radial-gradient(circle at 40% 40%, #E53E3E 0%, #c53030 30%, transparent 70%);
+        }
+        .orb-2 {
+            bottom: -12%;
+            right: -10%;
+            width: 50vw;
+            height: 50vw;
+            max-width: 650px;
+            max-height: 650px;
+            background: radial-gradient(circle at 60% 55%, #3b82f6 0%, #2563eb 25%, #1d4ed8 50%, transparent 72%);
+        }
+        .orb-3 {
+            top: 45%;
+            left: 50%;
+            width: 35vw;
+            height: 35vw;
+            max-width: 450px;
+            max-height: 450px;
+            background: radial-gradient(circle at center, #a855f7 0%, #7c3aed 35%, transparent 70%);
+            opacity: 0.14;
+            filter: blur(140px);
+        }
+
+        /* 玻璃卡片 */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.025);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .glass-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            background: radial-gradient(ellipse at var(--card-spot-x, 50%) var(--card-spot-y, 50%), rgba(229, 62, 62, 0.08) 0%, transparent 70%);
+            z-index: 0;
+        }
+        .glass-card:hover::after {
+            opacity: 1;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.045);
+            border-color: rgba(229, 62, 62, 0.3);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(229, 62, 62, 0.15) inset;
+        }
+        .glass-card>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 语言切换可见性 */
+        [data-lang] {
+            display: none;
+        }
+        html[lang="zh-CN"] [data-lang="zh"] {
+            display: block;
+        }
+        html[lang="zh-CN"] span[data-lang="zh"] {
+            display: inline;
+        }
+        html[lang="en"] [data-lang="en"] {
+            display: block;
+        }
+        html[lang="en"] span[data-lang="en"] {
+            display: inline;
+        }
+
+        /* SEO隐藏文本 */
+        .seo-hidden {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* 滚动进度条 */
+        .scroll-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2.5px;
+            z-index: 100;
+            background: linear-gradient(90deg, #E53E3E, #f87171, #5865F2);
+            border-radius: 0 2px 2px 0;
+            width: calc(var(--scroll-progress) * 100%);
+            transition: width 0.15s linear;
+            pointer-events: none;
+        }
+
+        /* Logo光晕旋转环 */
+        .logo-glow-ring {
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            border-top-color: rgba(229, 62, 62, 0.5);
+            border-right-color: rgba(88, 101, 242, 0.4);
+            animation: spinSlow 8s linear infinite;
+            pointer-events: none;
+            filter: blur(1px);
+        }
+        .logo-glow-ring:nth-child(2) {
+            inset: -16px;
+            animation-duration: 14s;
+            animation-direction: reverse;
+            border-top-color: rgba(88, 101, 242, 0.35);
+            border-right-color: rgba(229, 62, 62, 0.3);
+            filter: blur(2px);
+        }
+
+        /* 按钮光效 */
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.15), transparent, rgba(255, 255, 255, 0.05), transparent);
+            animation: spinSlow 6s linear infinite;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .btn-glow:hover::before {
+            opacity: 1;
+        }
+
+        /* 自定义滚动条 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        /* 选中样式 */
+        ::selection {
+            background: rgba(88, 101, 242, 0.7);
+            color: #ffffff;
+        }
+
+        /* 聚焦样式 */
+        :focus-visible {
+            outline: 2px solid #E53E3E;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        /* 移动端优化 */
+        @media (max-width: 768px) {
+            .ambient-orb {
+                filter: blur(80px);
+                opacity: 0.2;
+            }
+            .orb-1 {
+                width: 70vw;
+                height: 70vw;
+                top: -20%;
+                left: -20%;
+            }
+            .orb-2 {
+                width: 65vw;
+                height: 65vw;
+                bottom: -15%;
+                right: -20%;
+            }
+            .orb-3 {
+                display: none;
+            }
+            .glass-card:hover {
+                transform: translateY(-3px);
+            }
+            body::before {
+                background-size: 20px 20px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .logo-glow-ring,
+            .btn-glow::before,
+            .ambient-orb {
+                animation: none !important;
+                transition: none !important;
+            }
+            .glass-card {
+                transition: none !important;
+            }
+            .glass-card:hover {
+                transform: none !important;
+            }
+        }
     </style>
 </head>
-<body class="antialiased selection:bg-discord selection:text-white">
+<body class="antialiased">
 
+    <!-- 滚动进度条 -->
+    <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+    <!-- SEO 隐藏内容 -->
     <div class="seo-hidden">
         <h1>Discord Chinese Community - Learn Mandarin, HSK Prep, Chinese Culture</h1>
         <p>Searching for the best way to learn Chinese? Our Discord server offers HSK 1-6 information, Chinese grammar guides, and native conversation practice. Connect with friends from Beijing, Shanghai, and beyond. Perfect for students, expats, and gamers interested in Chinese games like Genshin Impact or Black Myth Wukong. Join our language exchange today!</p>
     </div>
 
-    <div class="ambient-orb orb-1"></div>
-    <div class="ambient-orb orb-2"></div>
+    <!-- 环境光球 -->
+    <div class="ambient-orb orb-1" aria-hidden="true"></div>
+    <div class="ambient-orb orb-2" aria-hidden="true"></div>
+    <div class="ambient-orb orb-3" aria-hidden="true"></div>
 
-    <nav class="fixed w-full z-50 top-0 py-4 px-4 md:px-12 flex justify-between items-center glass-card border-none rounded-none !bg-opacity-70">
+    <!-- 导航栏 -->
+    <nav class="fixed w-full z-50 top-0 py-3.5 px-4 md:px-10 flex justify-between items-center transition-all duration-500" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="absolute inset-0 bg-[#0a0b0f]/75 backdrop-blur-xl border-b border-white/5 -z-10" aria-hidden="true"></div>
         <div class="flex items-center gap-3">
-            <img src="/images/discord-chinese.png" alt="Discord Chinese" class="w-10 h-10 rounded-[12px] border border-gray-700 shadow-sm object-cover bg-gray-800">
-            <span class="text-lg md:text-xl font-black tracking-tighter hidden sm:block">Discord<span class="text-cnRed">Chinese</span></span>
+            <div class="relative flex-shrink-0">
+                <img src="/images/discord-chinese.png" alt="Discord Chinese Logo" class="w-9 h-9 md:w-10 md:h-10 rounded-xl border border-white/10 shadow-lg object-cover bg-gray-800" width="40" height="40" loading="eager">
+            </div>
+            <span class="text-base md:text-lg font-extrabold tracking-tight hidden sm:block">
+                Discord<span class="text-cnRed">Chinese</span>
+            </span>
         </div>
-        
-        <div class="flex items-center gap-3 md:gap-4">
-            <button onclick="toggleLanguage()" class="text-[10px] md:text-xs font-bold border border-gray-700 px-3 py-2 rounded-full hover:bg-white hover:text-black transition-all uppercase tracking-widest">
-                <span data-lang="zh">English</span><span data-lang="en">中文</span>
+
+        <div class="flex items-center gap-2.5 md:gap-4">
+            <button onclick="toggleLanguage()" class="text-[11px] md:text-xs font-semibold border border-white/15 px-3.5 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-wider hover:border-white/40 hover:shadow-lg hover:shadow-white/10 focus-visible:outline-2 focus-visible:outline-cnRed" aria-label="Switch language">
+                <span data-lang="zh">EN</span><span data-lang="en">中文</span>
             </button>
-            <a href="https://discord.gg/s4RtxQHdUV" class="bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:scale-105 transition-transform flex items-center gap-1.5 shadow-lg">
+            <a href="https://discord.gg/s4RtxQHdUV" class="bg-white text-black px-4 py-2.5 rounded-full text-sm font-bold hover:scale-105 transition-all duration-300 flex items-center gap-1.5 shadow-lg shadow-white/10 hover:shadow-white/20 focus-visible:outline-2 focus-visible:outline-cnRed" aria-label="Join Discord server">
                 <i data-lucide="log-in" class="w-4 h-4"></i>
                 <span data-lang="zh" class="hidden sm:inline">加入</span><span data-lang="en" class="hidden sm:inline">Join</span>
             </a>
         </div>
     </nav>
 
-    <section class="min-h-[100svh] flex flex-col justify-center items-center text-center px-4 pt-16">
+    <!-- Hero 区域 -->
+    <section class="min-h-[100svh] flex flex-col justify-center items-center text-center px-4 pt-20 pb-8" aria-labelledby="hero-heading">
         <div class="gsap-hero w-full max-w-4xl mx-auto flex flex-col items-center">
-            
-            <div class="relative mb-8">
-                <div class="absolute inset-0 bg-discord rounded-full blur-xl opacity-40 animate-pulse"></div>
-                <img src="/images/discord-chinese.png" alt="Discord Chinese Logo" class="relative w-24 h-24 md:w-32 md:h-32 rounded-3xl border-2 border-white/10 shadow-2xl object-cover bg-gray-800">
+
+            <!-- Logo 与旋转光晕 -->
+            <div class="relative mb-10 inline-flex items-center justify-center">
+                <div class="logo-glow-ring" aria-hidden="true"></div>
+                <div class="logo-glow-ring" aria-hidden="true"></div>
+                <div class="absolute inset-0 bg-discord rounded-full blur-2xl opacity-30 animate-pulse-soft" aria-hidden="true"></div>
+                <img src="/images/discord-chinese.png" alt="Discord Chinese Community Logo" class="relative w-20 h-20 md:w-28 md:h-28 rounded-[1.6rem] border-2 border-white/10 shadow-2xl object-cover bg-gray-800" width="112" height="112" loading="eager">
             </div>
 
-            <h2 class="text-cnRed font-bold tracking-[0.2em] uppercase mb-4 text-xs md:text-sm">Official Landing Page</h2>
-            
-            <h1 class="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-6 leading-[0.9] tracking-tighter">
-                <span data-lang="zh">世界盛大，<br><span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">欢迎回家。</span></span>
-                <span data-lang="en">THE WORLD IS GRAND,<br><span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">WELCOME HOME.</span></span>
+            <p class="text-cnRed font-bold tracking-[0.25em] uppercase mb-5 text-[11px] md:text-sm opacity-90">Official Landing Page</p>
+
+            <h1 id="hero-heading" class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-[0.92] tracking-tight max-w-3xl">
+                <span data-lang="zh">世界盛大，<br><span class="text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500">欢迎回家。</span></span>
+                <span data-lang="en">THE WORLD IS GRAND,<br><span class="text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500">WELCOME HOME.</span></span>
             </h1>
-            
-            <p class="text-gray-400 text-base md:text-xl max-w-2xl mx-auto mb-10 font-light px-2">
+
+            <p class="text-gray-400 text-sm md:text-lg max-w-xl mx-auto mb-10 font-normal leading-relaxed px-2">
                 <span data-lang="zh">不仅是学习中文的社区，更是连接中国文化与世界的桥梁。</span>
                 <span data-lang="en">More than a language community—your bridge to Chinese culture and global connections.</span>
             </p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
-                <a href="https://discord.gg/s4RtxQHdUV" class="w-full sm:w-auto bg-discord hover:bg-discordHover text-white px-8 py-4 rounded-full text-lg md:text-xl font-bold shadow-[0_0_30px_rgba(88,101,242,0.4)] hover:shadow-discord/60 transition-all flex items-center justify-center gap-3 group">
-                    <i data-lucide="message-circle" class="w-6 h-6 group-hover:animate-bounce"></i>
+
+            <div class="flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto px-4 sm:px-0">
+                <a href="https://discord.gg/s4RtxQHdUV" class="btn-glow w-full sm:w-auto bg-discord hover:bg-discordHover text-white px-7 py-3.5 rounded-full text-base md:text-lg font-bold shadow-[0_0_40px_rgba(88,101,242,0.35)] hover:shadow-[0_0_55px_rgba(88,101,242,0.5)] transition-all duration-400 flex items-center justify-center gap-2.5 group focus-visible:outline-2 focus-visible:outline-white" aria-label="Open in Discord">
+                    <i data-lucide="message-circle" class="w-5 h-5 group-hover:scale-110 transition-transform duration-300"></i>
                     <span data-lang="zh">在 Discord 打开</span><span data-lang="en">Open in Discord</span>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 opacity-60 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"></i>
                 </a>
             </div>
-            
-            <p class="mt-8 text-gray-500 text-xs md:text-sm flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                <span data-lang="zh">已有 9,000+ 位探索者在此汇聚</span>
-                <span data-lang="en">9,000+ Explorers gathered here</span>
-            </p>
+
+            <div class="mt-10 flex items-center gap-3 text-gray-500 text-xs md:text-sm" aria-live="polite">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                </span>
+                <span data-lang="zh">已有 <strong class="text-white font-semibold">10,000+</strong> 位探索者在此汇聚</span>
+                <span data-lang="en"><strong class="text-white font-semibold">10,000+</strong> Explorers gathered here</span>
+            </div>
         </div>
     </section>
 
-    <section class="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
-            <div class="glass-card md:col-span-7 rounded-[2rem] p-8 md:p-10 flex flex-col justify-end min-h-[300px] md:min-h-[350px]">
-                <div class="mb-auto w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-cnRed">
-                    <i data-lucide="languages"></i>
+    <!-- Bento Grid 卡片区域 -->
+    <section class="py-12 md:py-20 px-4 md:px-6 max-w-6xl mx-auto" aria-labelledby="features-heading">
+        <h2 id="features-heading" class="sr-only">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-5">
+
+            <!-- 卡片 1: 母语交流 (大卡片) -->
+            <div class="glass-card md:col-span-7 rounded-[2.5rem] p-7 md:p-10 flex flex-col justify-end min-h-[280px] md:min-h-[340px] group cursor-default">
+                <div class="mb-auto w-11 h-11 rounded-2xl bg-white/8 flex items-center justify-center text-cnRed transition-colors duration-400 group-hover:bg-cnRed/20 group-hover:text-cnRedBright">
+                    <i data-lucide="languages" class="w-5 h-5"></i>
                 </div>
-                <h3 class="text-2xl md:text-3xl font-bold mb-3 mt-8">
+                <h3 class="text-xl md:text-2xl font-bold mb-2.5 mt-6 tracking-tight">
                     <span data-lang="zh">母语交流环境</span><span data-lang="en">Native Immersion</span>
                 </h3>
-                <p class="text-gray-400 text-sm md:text-base">
+                <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-lg">
                     <span data-lang="zh">在这里，你可以直接与成百上千的母语者即时语音，感受最地道的口语表达与网络俚语。</span>
                     <span data-lang="en">Chat with hundreds of native speakers in real-time. Master authentic expressions and modern slang.</span>
                 </p>
+                <div class="mt-5 flex gap-2 flex-wrap">
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">🎙️ 语音频道</span>
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">💬 实时聊天</span>
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">🌐 多元文化</span>
+                </div>
             </div>
 
-            <div class="glass-card md:col-span-5 rounded-[2rem] p-8 md:p-10 flex flex-col justify-end">
-                <div class="mb-auto w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-blue-400">
-                    <i data-lucide="info"></i>
+            <!-- 卡片 2: HSK 信息 (小卡片) -->
+            <div class="glass-card md:col-span-5 rounded-[2.5rem] p-7 md:p-10 flex flex-col justify-end group cursor-default">
+                <div class="mb-auto w-11 h-11 rounded-2xl bg-white/8 flex items-center justify-center text-blue-400 transition-colors duration-400 group-hover:bg-blue-400/20 group-hover:text-blue-300">
+                    <i data-lucide="book-open" class="w-5 h-5"></i>
                 </div>
-                <h3 class="text-2xl md:text-3xl font-bold mb-3 mt-8">
+                <h3 class="text-xl md:text-2xl font-bold mb-2.5 mt-6 tracking-tight">
                     <span data-lang="zh">专业 HSK 信息</span><span data-lang="en">HSK Information</span>
                 </h3>
-                <p class="text-gray-400 text-sm md:text-base">
-                    <span data-lang="zh">从 HSK1 到 HSK6，专业的教师与丰富的题库将祝你突破瓶颈！</span>
-                    <span data-lang="en">Our teachers and rich question banks will help learners of all levels from HSK1 up to HSK6 overcome plateaus.</span>
+                <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                    <span data-lang="zh">从 HSK1 到 HSK6，专业的教师与丰富的题库助你突破瓶颈！</span>
+                    <span data-lang="en">Our teachers and rich question banks help learners of all levels overcome plateaus.</span>
                 </p>
+                <div class="mt-5 flex gap-2 flex-wrap">
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">📝 HSK 1-6</span>
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">📚 题库资源</span>
+                </div>
             </div>
 
-            <div class="glass-card md:col-span-5 rounded-[2rem] p-8 md:p-10 flex flex-col justify-end min-h-[250px] md:min-h-[300px]">
-                <div class="mb-auto w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-purple-400">
-                    <i data-lucide="palmtree"></i>
+            <!-- 卡片 3: 文化交流 (小卡片) -->
+            <div class="glass-card md:col-span-5 rounded-[2.5rem] p-7 md:p-10 flex flex-col justify-end min-h-[240px] md:min-h-[280px] group cursor-default">
+                <div class="mb-auto w-11 h-11 rounded-2xl bg-white/8 flex items-center justify-center text-purple-400 transition-colors duration-400 group-hover:bg-purple-400/20 group-hover:text-purple-300">
+                    <i data-lucide="compass" class="w-5 h-5"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3 mt-8">
+                <h3 class="text-lg md:text-xl font-bold mb-2.5 mt-6 tracking-tight">
                     <span data-lang="zh">深度文化交流</span><span data-lang="en">Cultural Exchange</span>
                 </h3>
-                <p class="text-gray-400 text-sm md:text-base">
+                <p class="text-gray-400 text-sm md:text-base leading-relaxed">
                     <span data-lang="zh">探索中国美食、旅游、历史与艺术。从故宫的砖瓦到现代的赛博成都。</span>
                     <span data-lang="en">Explore Chinese food, travel, history, and art—from ancient palaces to modern cities.</span>
                 </p>
+                <div class="mt-5 flex gap-2 flex-wrap">
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">🍜 美食</span>
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">✈️ 旅游</span>
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">🏛️ 历史</span>
+                </div>
             </div>
 
-            <div class="glass-card md:col-span-7 rounded-[2rem] p-8 md:p-10 flex flex-col justify-end">
-                <div class="mb-auto w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-green-400">
-                    <i data-lucide="users"></i>
+            <!-- 卡片 4: 社区朋友圈 (大卡片) -->
+            <div class="glass-card md:col-span-7 rounded-[2.5rem] p-7 md:p-10 flex flex-col justify-end group cursor-default">
+                <div class="mb-auto w-11 h-11 rounded-2xl bg-white/8 flex items-center justify-center text-green-400 transition-colors duration-400 group-hover:bg-green-400/20 group-hover:text-green-300">
+                    <i data-lucide="heart-handshake" class="w-5 h-5"></i>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold mb-3 mt-8">
+                <h3 class="text-lg md:text-xl font-bold mb-2.5 mt-6 tracking-tight">
                     <span data-lang="zh">社区朋友圈</span><span data-lang="en">Community Circle</span>
                 </h3>
-                <p class="text-gray-400 text-sm md:text-base">
+                <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-lg">
                     <span data-lang="zh">分享你的生活瞬间、游戏成就或摄影作品。在这里，跨越时区建立真正的友谊。</span>
                     <span data-lang="en">Share moments, gaming feats, and photography. Build friendships across time zones.</span>
                 </p>
+                <div class="mt-5 flex gap-2 flex-wrap">
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">🎮 游戏</span>
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">📸 摄影</span>
+                    <span class="text-[10px] md:text-xs px-3 py-1.5 rounded-full bg-white/5 text-gray-400 border border-white/5">🤝 友谊</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 text-center border-t border-white/5 relative overflow-hidden">
+    <!-- Footer CTA -->
+    <footer class="py-16 md:py-24 text-center border-t border-white/5 relative overflow-hidden" role="contentinfo">
+        <!-- Footer 背景光效 -->
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60vw] h-[40vh] bg-cnRed/5 blur-[150px] rounded-full pointer-events-none" aria-hidden="true"></div>
+
         <div class="px-4 relative z-10 flex flex-col items-center">
-            <h2 class="text-3xl md:text-5xl font-black mb-8">
+            <h2 class="text-2xl md:text-4xl lg:text-5xl font-black mb-4 tracking-tight">
                 <span data-lang="zh">准备好开启新旅程了吗？</span><span data-lang="en">Ready to Start?</span>
             </h2>
-            
-            <a href="https://discord.gg/s4RtxQHdUV" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black hover:bg-gray-200 font-bold rounded-full text-lg shadow-xl hover:scale-105 transition-transform">
+            <p class="text-gray-500 text-sm md:text-base mb-8 max-w-md">
+                <span data-lang="zh">加入我们，成为跨越国界的文化探索者。</span><span data-lang="en">Join us and become a cross-border cultural explorer.</span>
+            </p>
+
+            <a href="https://discord.gg/s4RtxQHdUV" class="btn-glow w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white text-black hover:bg-gray-100 font-bold rounded-full text-lg shadow-xl shadow-white/10 hover:shadow-2xl hover:shadow-white/15 hover:scale-105 transition-all duration-400 focus-visible:outline-2 focus-visible:outline-white" aria-label="Join Discord Community">
                 <span data-lang="zh">加入 Discord 社区</span><span data-lang="en">Join Discord Community</span>
-                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                <i data-lucide="arrow-right" class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"></i>
             </a>
-            
-            <div class="mt-20 max-w-4xl mx-auto flex flex-wrap justify-center gap-x-4 gap-y-2 text-[9px] md:text-[10px] text-gray-700 uppercase tracking-tighter opacity-50 px-2">
-                <span>Learn Chinese</span> <span>HSK 1-6</span> <span>Mandarin Discord</span> <span>Learn Chinese Online</span> 
-                <span>Study in China</span> <span>Beijing</span> <span>Shanghai</span> <span>Chinese Slang</span>
-                <span>Pinyin Guide</span> <span>Chinese Characters</span> <span>HSK Test</span> <span>Chinese Friends</span>
-                <span>Language Exchange</span> <span>Discord Chinese Server</span> <span>Learn Mandarin Free</span>
-                <span>HSK Info</span> <span>Chinese Culture</span> <span>Mandarin Practice</span> <span>Business Chinese</span>
+
+            <!-- SEO 关键词标签 -->
+            <div class="mt-16 max-w-4xl mx-auto flex flex-wrap justify-center gap-x-3 gap-y-1.5 text-[9px] md:text-[10px] text-gray-700 uppercase tracking-tight opacity-40 px-2 select-none" aria-hidden="true">
+                <span>Learn Chinese</span> <span>·</span> <span>HSK 1-6</span> <span>·</span> <span>Mandarin Discord</span> <span>·</span> <span>Learn Chinese Online</span>
+                <span>·</span> <span>Study in China</span> <span>·</span> <span>Beijing</span> <span>·</span> <span>Shanghai</span> <span>·</span> <span>Chinese Slang</span>
+                <span>·</span> <span>Pinyin Guide</span> <span>·</span> <span>Chinese Characters</span> <span>·</span> <span>HSK Test</span> <span>·</span> <span>Chinese Friends</span>
+                <span>·</span> <span>Language Exchange</span> <span>·</span> <span>Discord Chinese Server</span> <span>·</span> <span>Learn Mandarin Free</span>
+                <span>·</span> <span>HSK Info</span> <span>·</span> <span>Chinese Culture</span> <span>·</span> <span>Mandarin Practice</span> <span>·</span> <span>Business Chinese</span>
             </div>
-            
-            <p class="mt-12 text-gray-600 text-xs">© 2026 Discord Chinese. All rights reserved.</p>
+
+            <p class="mt-10 text-gray-600 text-xs tracking-wide">© 2026 Discord Chinese. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        lucide.createIcons();
-        gsap.registerPlugin(ScrollTrigger);
+        (function() {
+            // 初始化 Lucide 图标
+            lucide.createIcons();
 
-        // 语言切换
-        function toggleLanguage() {
-            const html = document.documentElement;
-            const current = html.getAttribute('lang');
-            const next = current === 'zh-CN' ? 'en' : 'zh-CN';
-            
-            gsap.to("body", { opacity: 0, duration: 0.2, onComplete: () => {
-                html.setAttribute('lang', next);
-                localStorage.setItem('pref-lang', next);
-                gsap.to("body", { opacity: 1, duration: 0.3 });
-            }});
-        }
+            // 注册 GSAP ScrollTrigger
+            gsap.registerPlugin(ScrollTrigger);
 
-        const savedLang = localStorage.getItem('pref-lang');
-        if (savedLang) document.documentElement.setAttribute('lang', savedLang);
+            // ---- 语言切换 ----
+            function toggleLanguage() {
+                const html = document.documentElement;
+                const current = html.getAttribute('lang') || 'en';
+                const next = current === 'zh-CN' ? 'en' : 'zh-CN';
 
-        // 动画
-        gsap.from(".gsap-hero > *", { y: 30, opacity: 0, duration: 1, stagger: 0.15, ease: "power3.out" });
-        
-        gsap.utils.toArray('.glass-card').forEach(card => {
-            gsap.from(card, {
-                scrollTrigger: { trigger: card, start: "top 90%" },
-                y: 30, opacity: 0, duration: 0.8
+                gsap.to("body", {
+                    opacity: 0,
+                    duration: 0.18,
+                    ease: "power2.in",
+                    onComplete: () => {
+                        html.setAttribute('lang', next);
+                        localStorage.setItem('pref-lang', next);
+                        // 重新初始化图标（因为DOM文本变化可能影响图标）
+                        lucide.createIcons();
+                        gsap.to("body", {
+                            opacity: 1,
+                            duration: 0.3,
+                            ease: "power2.out"
+                        });
+                    }
+                });
+            }
+
+            // 从 localStorage 恢复语言偏好
+            const savedLang = localStorage.getItem('pref-lang');
+            if (savedLang && (savedLang === 'zh-CN' || savedLang === 'en')) {
+                document.documentElement.setAttribute('lang', savedLang);
+            } else {
+                // 默认英文
+                document.documentElement.setAttribute('lang', 'en');
+            }
+
+            // 暴露到全局
+            window.toggleLanguage = toggleLanguage;
+
+            // ---- 滚动进度条 ----
+            function updateScrollProgress() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+                document.documentElement.style.setProperty('--scroll-progress', progress.toFixed(4));
+            }
+            window.addEventListener('scroll', updateScrollProgress, { passive: true });
+            updateScrollProgress();
+
+            // ---- 鼠标跟踪光球偏移 (桌面端) ----
+            const orb1 = document.querySelector('.orb-1');
+            const orb2 = document.querySelector('.orb-2');
+            const orb3 = document.querySelector('.orb-3');
+            let mouseX = 0.5;
+            let mouseY = 0.5;
+            let targetMouseX = 0.5;
+            let targetMouseY = 0.5;
+            let rafId = null;
+
+            function updateOrbs() {
+                const dx1 = (targetMouseX - 0.5) * 40;
+                const dy1 = (targetMouseY - 0.5) * 40;
+                const dx2 = (targetMouseX - 0.5) * -35;
+                const dy2 = (targetMouseY - 0.5) * -30;
+                const dx3 = (targetMouseX - 0.5) * 25;
+                const dy3 = (targetMouseY - 0.5) * -20;
+
+                if (orb1) orb1.style.transform = `translate(${dx1}px, ${dy1}px)`;
+                if (orb2) orb2.style.transform = `translate(${dx2}px, ${dy2}px)`;
+                if (orb3) orb3.style.transform = `translate(${dx3}px, ${dy3}px)`;
+
+                // 平滑插值
+                mouseX += (targetMouseX - mouseX) * 0.08;
+                mouseY += (targetMouseY - mouseY) * 0.08;
+                document.documentElement.style.setProperty('--mouse-x', mouseX.toFixed(4));
+                document.documentElement.style.setProperty('--mouse-y', mouseY.toFixed(4));
+
+                rafId = requestAnimationFrame(updateOrbs);
+            }
+
+            function onMouseMove(e) {
+                targetMouseX = e.clientX / window.innerWidth;
+                targetMouseY = e.clientY / window.innerHeight;
+            }
+
+            const isMobile = window.matchMedia('(max-width: 768px)').matches;
+            if (!isMobile && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+                window.addEventListener('mousemove', onMouseMove, { passive: true });
+                rafId = requestAnimationFrame(updateOrbs);
+            }
+
+            // ---- 卡片光效跟踪 ----
+            document.querySelectorAll('.glass-card').forEach(card => {
+                card.addEventListener('mousemove', function(e) {
+                    const rect = this.getBoundingClientRect();
+                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                    this.style.setProperty('--card-spot-x', x.toFixed(1) + '%');
+                    this.style.setProperty('--card-spot-y', y.toFixed(1) + '%');
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.removeProperty('--card-spot-x');
+                    this.style.removeProperty('--card-spot-y');
+                });
             });
-        });
+
+            // ---- 导航栏滚动效果 ----
+            const navbar = document.getElementById('navbar');
+            let lastScroll = 0;
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.scrollY;
+                if (navbar) {
+                    if (currentScroll > 50) {
+                        navbar.style.boxShadow = '0 4px 30px rgba(0,0,0,0.4)';
+                    } else {
+                        navbar.style.boxShadow = 'none';
+                    }
+                }
+                lastScroll = currentScroll;
+            }, { passive: true });
+
+            // ---- GSAP 入场动画 ----
+            gsap.from(".gsap-hero > *", {
+                y: 35,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.12,
+                ease: "power3.out",
+                delay: 0.2
+            });
+
+            // 卡片滚动触发动画
+            gsap.utils.toArray('.glass-card').forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 88%",
+                        toggleActions: "play none none none",
+                    },
+                    y: 40,
+                    opacity: 0,
+                    duration: 0.7,
+                    delay: i * 0.08,
+                    ease: "power2.out"
+                });
+            });
+
+            // Footer CTA 动画
+            gsap.from("footer h2", {
+                scrollTrigger: {
+                    trigger: "footer",
+                    start: "top 85%",
+                    toggleActions: "play none none none",
+                },
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+            gsap.from("footer .btn-glow", {
+                scrollTrigger: {
+                    trigger: "footer",
+                    start: "top 85%",
+                    toggleActions: "play none none none",
+                },
+                y: 25,
+                opacity: 0,
+                duration: 0.7,
+                delay: 0.2,
+                ease: "power2.out"
+            });
+
+            // ---- 响应式清理 ----
+            window.addEventListener('resize', () => {
+                const nowMobile = window.matchMedia('(max-width: 768px)').matches;
+                if (nowMobile && rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = null;
+                    window.removeEventListener('mousemove', onMouseMove);
+                    if (orb1) orb1.style.transform = '';
+                    if (orb2) orb2.style.transform = '';
+                    if (orb3) orb3.style.transform = '';
+                } else if (!nowMobile && !rafId && window.matchMedia(
+                        '(prefers-reduced-motion: no-preference)').matches) {
+                    window.addEventListener('mousemove', onMouseMove, { passive: true });
+                    rafId = requestAnimationFrame(updateOrbs);
+                }
+            });
+
+        })();
     </script>
 </body>
 </html>
